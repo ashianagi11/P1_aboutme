@@ -1,0 +1,97 @@
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+.sidebar {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 552px;
+  bottom: 0px;
+  width: 30%;
+  height: 100%;
+  background-color: black;
+}
+.name {
+  position: relative;
+  top: 260px;
+  left: 25px;
+  color: white;
+}
+
+.summary {
+  position: relative;
+  top: 255px;
+  left: 25px;
+  max-width: 240px;
+  margin: 0px;
+  color: white;
+}
+.about {
+  position: absolute;
+  left: 15px;
+  right: 0px;
+  bottom: 60%;
+  width: 65%;
+  background-color: black;
+}
+
+.about_name {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 0px;
+  line-height: 42px;
+}
+
+.content {
+  position: static;
+  overflow: visible;
+  width: 80%;
+  margin-left: 30%;
+  height: 1558px;
+  background-color: white;
+  position: fixed;
+}
+.welcome {
+  position: relative;
+  top: 240px;
+  left: 10px;
+}
+.welcome_text {
+  font-size: 40px;
+}
+.project_text {
+  position: relative;
+  top: 210px;
+  left: 10px;
+  margin-top: 10px;
+}
+.image_text {
+  position: relative;
+  top: 200px;
+  left: 10px;
+  margin-top: 10px;
+}
+.line1 {
+  width: 150px;
+  height: 8px;
+  background-color:#ffeb3b;
+  border: 0 none;
+  position: absolute;
+  left: 10px;
+  top: 360px;
+}
+.line2 {
+  width: 150px;
+  height: 8px;
+  background-color:#ffeb3b;
+  border: 0 none;
+  position: absolute;
+  left: 10px;
+  top: 422px;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
