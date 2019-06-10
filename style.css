@@ -183,14 +183,33 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#project_title {
+#project1_title {
   color: white;
   position: absolute;
-  top: 210px;
+  top: 280px;
   left: 260px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+#project2_title {
+  color: white;
+  position: absolute;
+  top: 325px;
+  left: 260px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#project3_title {
+  color: white;
+  position: absolute;
+  top: 370px;
+  left: 260px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 /* animations */
 @keyframes a-ltr-after{
     0% {transform: translateX(-100%)}
