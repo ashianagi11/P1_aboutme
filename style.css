@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   min-height: 100%;
+  font-family: 'Fira Sans', sans-serif;
 }
 /* index page  */
 /* sidebar edits */
@@ -79,7 +80,7 @@ strong {
   overflow: visible;
   width: 80%;
   margin-left: 30%;
-  height: 1558px;
+  height: 100%;
   background-color: white;
   position: fixed;
 }
@@ -97,13 +98,13 @@ strong {
 }
 .project_text {
   position: relative;
-  top: 210px;
+  top: 25%;
   left: 10px;
   margin-top: 10px;
 }
 .image_text {
   position: relative;
-  top: 200px;
+  top: 25.5%;
   left: 10px;
   margin-top: 10px;
 }
