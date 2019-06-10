@@ -166,14 +166,18 @@ a:hover {
 }
 
 /* projects page  */
-#project_body  {
-  display: flex;
+#sizechanged {
+  height: 100%;
+}
+.project_body  {
   margin: 0px;
-  height: 720px;
-  align-content: center;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
   background-color: black;
+}
+.project_box {
+  width: 500px;
 }
 .project_line {
   width: 400px;
@@ -183,31 +187,12 @@ a:hover {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-#project1_title {
+#project_title {
   color: white;
-  position: absolute;
-  top: 280px;
-  left: 260px;
+  width:100px;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-#project2_title {
-  color: white;
-  position: absolute;
-  top: 325px;
-  left: 260px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-#project3_title {
-  color: white;
-  position: absolute;
-  top: 370px;
-  left: 260px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  padding-left: 53px;
 }
 
 /* animations */
