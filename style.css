@@ -76,7 +76,6 @@ strong {
 }
 /* content edits */
 .content {
-  position: static;
   overflow: visible;
   width: 80%;
   margin-left: 30%;
@@ -98,13 +97,13 @@ strong {
 }
 .project_text {
   position: relative;
-  top: 25%;
+  top: 224px;
   left: 10px;
   margin-top: 10px;
 }
 .image_text {
   position: relative;
-  top: 25.5%;
+  top: 227px;
   left: 10px;
   margin-top: 10px;
 }
