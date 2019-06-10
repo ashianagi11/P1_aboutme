@@ -2,6 +2,8 @@ body {
   margin: 0px;
   min-height: 100%;
 }
+/* index page  */
+/* sidebar edits */
 .sidebar {
   position: fixed;
   left: 0px;
@@ -18,7 +20,50 @@ body {
   left: 25px;
   color: white;
 }
+strong {
+  color: #fedc56;
+  margin-left: 5px;
+}
+.name span {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  line-height: 1.2;
+}
+.name span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  /* following line from online */
+  animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+  transform: translateX(-101%);
+}
+.name span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    /* following line from online */
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+/* following lines from online */
+.name span:nth-of-type(1)::before,
+.name span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
 
+.name span:nth-of-type(2)::before,
+.name span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
 .summary {
   position: relative;
   top: 255px;
@@ -26,24 +71,9 @@ body {
   max-width: 240px;
   margin: 0px;
   color: white;
+  animation: comein 1s;
 }
-.about {
-  position: absolute;
-  left: 15px;
-  right: 0px;
-  bottom: 60%;
-  width: 65%;
-  background-color: black;
-}
-
-.about_name {
-  display: flex;
-  width: auto;
-  height: auto;
-  margin-top: 0px;
-  line-height: 42px;
-}
-
+/* content edits */
 .content {
   position: static;
   overflow: visible;
@@ -60,6 +90,10 @@ body {
 }
 .welcome_text {
   font-size: 40px;
+  animation: appear 2s;
+}
+.welcome_text:hover {
+  color: #fdb9c8;
 }
 .project_text {
   position: relative;
@@ -76,22 +110,116 @@ body {
 .line1 {
   width: 150px;
   height: 8px;
-  background-color:#ffeb3b;
+  background-color:#fedc56;
   border: 0 none;
   position: absolute;
   left: 10px;
   top: 360px;
+  animation: line 1s;
 }
 .line2 {
   width: 150px;
   height: 8px;
-  background-color:#ffeb3b;
+  background-color:#fedc56;
   border: 0 none;
   position: absolute;
   left: 10px;
   top: 422px;
+  animation: line 1s;
 }
 a {
   text-decoration: none;
   color: grey;
+}
+a:hover {
+  color: black;
+}
+/* image page */
+#name2 {
+  position: relative;
+  top: 0px;
+  left: 10px;
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  background-color: black;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+.column, img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#color {
+  background-color: black;
+}
+
+/* projects page  */
+#project_body  {
+  display: flex;
+  margin: 0px;
+  height: 720px;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+}
+.project_line {
+  width: 400px;
+  height: 3px;
+  background-color:#fedc56;
+  border: 0 none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#project_title {
+  color: white;
+  position: absolute;
+  top: 210px;
+  left: 260px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* animations */
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+@keyframes line {
+  from { right: -1%;}
+  to { right: 83%;}
+}
+@keyframes comein {
+  from { left: -100px;}
+}
+@keyframes appear {
+  from {color: white;}
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
