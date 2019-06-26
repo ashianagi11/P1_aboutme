@@ -95,6 +95,10 @@ h3 {
   width: 60px;
   height: 60px;
 }
+#twicon {
+  width: 62px;
+  height: 62px;
+}
 /* content edits */
 .content {
   overflow: visible;
@@ -186,7 +190,6 @@ a:hover {
   background-color: black;
   overflow: visible;
 }
-
 /* projects page  */
 #sizechanged {
   height: 100%;
